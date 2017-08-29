@@ -138,18 +138,6 @@ let syntax_error_extension_node loc message =
  (str, payload)
 
 let reason_to_ml_swapping_alist = [
-  "!"       , "not";
-  "^"       , "!";
-  "++"      , "^";
-  "==="     , "==";
-  "=="      , "=";
-  (* ===\/ and !==\/ are not representable in OCaml but
-   * representable in Reason
-   *)
-  "\\!=="   , "!==";
-  "\\==="   , "===";
-  "!="      , "<>";
-  "!=="     , "!=";
   "match"   , "switch";
   "method"  , "pub";
   "private" , "pri";
